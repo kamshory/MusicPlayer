@@ -1,0 +1,297 @@
+@charset "utf-8";
+body{
+	margin:0;
+	padding:0;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+	color:#444444;
+	background-color:#EEEEEE;
+}
+
+
+#equalizer{
+	text-align:center;
+}
+#equalizer .eq-label{
+	text-align:center;
+	font-size:10px;
+	color:#FFFFFF;
+}
+#equalizer input[type="range"]{
+	width:18px;
+	height:125px;
+}
+#picture-container{
+	background:#444444 url(images/headset.png) no-repeat center center;
+}
+#picture{
+	height:240px;
+	margin:auto;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+#equalizer{
+	padding:10px;
+	height:240px;
+	width:240px;
+	margin:auto;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	background-color:#444444;
+}
+#waveform{
+	background-color:#444444;
+	margin:0px 0px 10px 0px;
+}
+#info-wrapper{
+	margin:auto;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	background-color:#444444;
+	color:#EEEEEE;
+	padding:10px 10px 10px 10px;
+	overflow:auto;
+}
+#info{
+	height:220px;
+}
+.equalizer-title{
+	padding:4px 0px 4px 0px;
+	text-align:center;
+	color:#EEEEEE;
+}
+#reset-equalizer{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(238, 238, 238);
+    padding: 4px 18px;
+
+}
+#status{
+	float:right;
+	text-align:right;
+	padding-top:5px;
+}
+#playlist-wrapper{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	background-color:#444444;
+	color:#EEEEEE;
+	padding:10px 10px 10px 10px;
+	
+}
+#playlist{
+	overflow:auto;
+	height:140px;
+}
+#playlist ul{
+	margin:0;
+	padding:0;
+}
+#playlist ul li{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+
+#playlist a{
+	color:#EEEEEE;
+	text-decoration:none;
+	display:block;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	padding:3px 10px;
+}
+#playlist a:hover{
+	background-color:#4E6650;
+}
+#playlist a.music-item-selected{
+	background-color:#666666;
+}
+#volume-container{
+	display:inline-block;
+	background:url(images/volume.png) no-repeat center center;
+	height:22px;
+	padding:0px 20px 0px 20px;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	vertical-align:baseline;
+}
+#volume-container input[type="range"]{
+	height:22px;
+	width:100px;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	vertical-align:bottom;
+}
+.controls{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	background-color:#444444;
+	color:#EEEEEE;
+	padding:2px 10px;
+	overflow:auto;
+	margin-bottom:10px;
+	overflow:hidden;
+}
+.main-controls{
+	padding:10px 10px;
+}
+.controls button.btn{
+	vertical-align:baseline;
+	height:20px;
+	width:20px;
+	border:0;
+	background:none;
+	display:inline-block;
+	padding:0;
+}
+button.btn .btn-text{
+	display:none;
+}
+button.btn .btn-icon{
+	height:20px;
+	width:20px;
+	border:0;
+	background:url(images/button.png) no-repeat;
+	display:inline-block;
+	padding:0;
+}
+button.btn .btn-icon-pause{
+	background-position:-25px 0px;
+}
+button.btn .btn-icon-play{
+	background-position:0px 0px;
+}
+button.btn .btn-icon-stop{
+	background-position:-50px 0px;
+}
+button.btn .btn-icon-reset-eq{
+	background-position:-75px 0px;
+}
+button.btn .btn-icon-preset-eq1{
+	background-position:-100px 0px;
+}
+button.btn .btn-icon-preset-eq2{
+	background-position:-125px 0px;
+}
+button.btn .btn-icon-preset-eq3{
+	background-position:-150px 0px;
+}
+
+
+@media screen and (max-width:799px)
+{
+	.span_1_of_3{
+		margin:5px 0px;
+		background:#444444;
+	}
+}
+@media screen and (min-width:800px)
+{
+#demo{
+	width:800px;
+	margin:auto;
+	padding:0px 0;
+}
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 10px 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+	content:"";
+	display:table;
+}
+.group:after {
+	clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 */
+}
+
+/*  GRID OF THREE  */
+.span_3_of_3 {
+	width: 100%;
+}
+.span_2_of_3 {
+	width: 66.1%;
+}
+.span_1_of_3 {
+	width: 32.2%;
+	background-color:#444444;
+}
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { margin: 1% 0 1% 0%;}
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}
+.clear{
+	clear:both;
+}
+
+
+
+::-webkit-scrollbar-track-piece:start {
+   /* Select the top half (or left half) or scrollbar track individually */
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+   /* Select the thumb when the browser window isn't in focus */
+}
+
+::-webkit-scrollbar-button:horizontal:decrement:hover {
+   /* Select the down or left scroll button when it's being hovered by the mouse */
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+
+.container {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	box-sizing: border-box;
+	padding: 10px;
+	overflow: hidden;
+}
+
+.overview {
+	height: auto;
+}
