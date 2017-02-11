@@ -11,7 +11,7 @@
 <link rel="stylesheet" type="text/css" href="css/jquery.custom-scrollbar.css">
 
 
-<title>Free Music</title>
+<title>Web Music Player</title>
 
 <script type="text/javascript">
 $(document).ready(function(e) {
